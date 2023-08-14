@@ -1,32 +1,16 @@
 import datetime
 import json
-
 from Cryptodome.Signature import pkcs1_15
 from Cryptodome.Hash import SHA256
 from Cryptodome.PublicKey import RSA
 import requests
-
-
 import base64
 import time
 from normal_json import normalizer_jason
 
-
-
-
-
-
-
-
 mil_time = int(time.time() * 1000) 
 
-
-
 url = "https://sandboxrc.tax.gov.ir/req/api/self-tsp/sync/GET_TOKEN/"  # API url 
-
-
-
-
 
 headers= {'requestTraceId':f'{mil_time}', 'timestamp': f'{mil_time}', 'Content-Type':'application/json'}
 dict_headers= {'requestTraceId':f'{mil_time}', 'timestamp': f'{mil_time}'}
@@ -43,8 +27,6 @@ dict_packet= {
 "fiscalId":"",
 "dataSignature":""
 }
-
-
 def get_tocken():
   dict3 = {**dict_headers, **dict_packet}  # Merging two dictionaries 
   print("dict3=>>>",dict3)
@@ -75,13 +57,6 @@ def get_tocken():
      "signature":  f"{base64_signature}"
   }
 
-
-
-
-
-
-
-
   r= requests.post(url, data= json.dumps(paket_for_send), headers = headers  ,verify=False)
 
 
@@ -93,9 +68,3 @@ def get_tocken():
 
 x= get_tocken()
 print('Tocken: ',x)
-
-
-
-
-
-
