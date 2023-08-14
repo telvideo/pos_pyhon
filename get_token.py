@@ -36,7 +36,7 @@ dict_packet= {
 "uid":'null',
 "packetType":"GET_TOKEN",
 "retry":'false',
-"data":{"username":"A11111"},
+"data":{"username":"Axxxxx"},
 "encryptionKeyId":"",
 "symmetricKey":"",
 "iv":"",
@@ -64,7 +64,7 @@ def get_tocken():
       "packetType": "GET_TOKEN",
       "retry": false,
       "data": {
-        "username": "A11111"
+        "username": "Axxxxx"
       },
       "encryptionKeyId": "",
       "symmetricKey": "",
