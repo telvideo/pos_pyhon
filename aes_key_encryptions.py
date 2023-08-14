@@ -1,6 +1,3 @@
-
-
-
 from Cryptodome.Cipher import PKCS1_OAEP
 from Cryptodome.PublicKey import RSA
 import base64
@@ -14,27 +11,4 @@ def aes_key_encryptions(aes_key_byte):
     signature =cipher.encrypt(aes_key_byte)
     base64_bytes = base64.b64encode(signature)
     base64_signature = base64_bytes.decode('ascii')
-    print()
     return base64_signature
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
