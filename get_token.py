@@ -10,7 +10,7 @@ from normal_json import normalizer_jason
 
 mil_time = int(time.time() * 1000) 
 
-url = "https://sandboxrc.tax.gov.ir/req/api/self-tsp/sync/GET_TOKEN/"  # API url 
+url = "https://sandboxrc.tax.gov.ir/req/api/self-tsp/sync/GET_TOKEN"  # API url 
 
 headers= {'requestTraceId':f'{mil_time}', 'timestamp': f'{mil_time}', 'Content-Type':'application/json'}
 dict_headers= {'requestTraceId':f'{mil_time}', 'timestamp': f'{mil_time}'}
