@@ -21,10 +21,7 @@ def send_invoice():
     
 
     json_load_invoice =input_invoice_user()
-    print("میاد اینجا")
-    print(json_load_invoice)
-    save_to_db=invoice_to_db(json_load_invoice) # save_to_db
-    print("save_to_db==",save_to_db)
+
 
 
 
