@@ -5,7 +5,7 @@ from Cryptodome.PublicKey import RSA
 import requests
 import base64
 import time
-from normal_json import normalizer_jason
+from normalizer_invoice import normalizer
 # from get_token import get_tocken
 
 
@@ -13,7 +13,7 @@ from normal_json import normalizer_jason
 mil_time = int(time.time() * 1000) 
 
 
-url = "https://sandboxrc.tax.gov.ir/req/api/self-tsp/sync/GET_SERVER_INFORMATION/"
+url = "https://sandboxrc.tax.gov.ir/req/api/self-tsp/sync/GET_SERVER_INFORMATION"
 
 
 
