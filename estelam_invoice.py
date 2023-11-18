@@ -5,7 +5,7 @@ from Cryptodome.PublicKey import RSA
 import requests
 import base64
 import time
-from normal_json import normalizer_jason
+from normalizer_invoice import normalizer
 from get_token import get_tocken
 from send_invoise import send_invoice
 
